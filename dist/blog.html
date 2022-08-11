@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+    <title>Blog Home</title>
+  </head>
+  <style>
+    body {
+      background-color: #f5f5f5;
+      font-family: avenir;
+    }
+    .nav-link {
+      margin: 0 30px;
+      font-size: 25px;
+    }
+    .navbar {
+      background-color: none;
+    }
+    .card {
+      background-color: #f5f5f5;
+      font-family: avenir;
+    }
+    .card-title {
+      color: #262626;
+    }
+    @media only screen and (max-width: 786px) {
+      .container {
+        width: 100%;
+      }
+
+      .col-md-8 {
+        padding: 10%;
+      }
+      img {
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+      }
+    }
+    @media only screen and (min-width: 787px) {
+      .container {
+        width: 80%;
+      }
+      img {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+      }
+    }
+  </style>
+  <body class="d-flex flex-column h-100">
+    <div class="container py-3">
+      <!-- NavBar -->
+      <nav class="navbar bg-none navbar-expand-lg py-0 text-dark border-bottom">
+        <div class="container-fluid">
+          <a class="navbar-brand mb-4" href="blog.html">
+            <img
+              src="https://avatars.dicebear.com/api/miniavs/114.svg"
+              alt=""
+              width="50"
+              height="50"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+          <div class="d-inline-block align-text-top">
+            <h1>Blog</h1>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navmenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="#about" class="nav-link text-dark">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#blog" class="nav-link text-dark">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link text-dark">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <main class="flex-shrink-0">
+        <!-- Hero Section -->
+        <div class="pt-2 my-2 text-center">
+          <h1 class="display-5 fw-bold">My Blog</h1>
+          <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">
+              This is my blog! A place where I can write all of my thoughts and
+              discoveries.
+            </p>
+          </div>
+        </div>
+        <div class="">
+          <h2>Recent Posts</h2>
+        </div>
+
+        <!-- Card Layout -->
+        <div class="py-2">
+          
+	 <div class="card shadow mb-4">
+				<div class="row">
+					<div class="col-md-4" >
+						<img src="./articles/blog-images/poland.JPG"  style="  width: 100%;
+				  height: 32vh;
+					object-fit: cover;"alt="./articles/blog-images/poland.JPG">
+					 </div>
+					<div class="col-md-8 py-0 d-flex flex-column position-static" >
+						<a href="./articles/2022-07-13.html" class="text-decoration-none"><h2 class="card-title pt-2 mt-1 mb-0">My Trip To Poland!
+</h2></a>
+						<div class=" text-muted my-1">Jul 13, 2022</div>
+						<p class="mb-auto card-text" style="padding-right: 10px;">My trip to Poland was truly a magical time. I am writing this currently in Poland which is crazy! We did so much!...</p>
+						<div class ="card-footer px-0" style="background: transparent; border-top:0px; border-left: 0px;"> 
+						<button type="button" class=" flex btn btn-outline-secondary btn-sm my-1">🌎 travel</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		
+	 <div class="card shadow mb-4">
+				<div class="row">
+					<div class="col-md-4" >
+						<img src="./articles/blog-images/chi.jpg"  style="  width: 100%;
+				  height: 32vh;
+					object-fit: cover;"alt="./articles/blog-images/chi.jpg">
+					 </div>
+					<div class="col-md-8 py-0 d-flex flex-column position-static" >
+						<a href="./articles/2022-06-22.html" class="text-decoration-none"><h2 class="card-title pt-2 mt-1 mb-0">My Trip To Chicago
+</h2></a>
+						<div class=" text-muted my-1">Jun 22, 2022</div>
+						<p class="mb-auto card-text" style="padding-right: 10px;">Over the weekend I took a trip to Chicago to visit some of my college friends. It was such a fun trip and I ended up doing a lot of things. I've been to Chicago twice before and always enjoyed myself. I went once in the winter and again last year in the summer. Chicago is a great city but to me it paled in comparison to New York, a city...</p>
+						<div class ="card-footer px-0" style="background: transparent; border-top:0px; border-left: 0px;"> 
+						<button type="button" class=" flex btn btn-outline-secondary btn-sm my-1">🌎 travel</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		
+	 <div class="card shadow mb-4">
+				<div class="row">
+					<div class="col-md-4" >
+						<img src="./articles/blog-images/blog_image.avif"  style="  width: 100%;
+				  height: 32vh;
+					object-fit: cover;"alt="./articles/blog-images/blog_image.avif">
+					 </div>
+					<div class="col-md-8 py-0 d-flex flex-column position-static" >
+						<a href="./articles/2022-06-21.html" class="text-decoration-none"><h2 class="card-title pt-2 mt-1 mb-0">This is my very first blog post
+</h2></a>
+						<div class=" text-muted my-1">Jun 21, 2022</div>
+						<p class="mb-auto card-text" style="padding-right: 10px;">I wanted to create this blog in order to have a way to express my thoughts, ideas, and a place to post reviews. I love to consume content. Books, TV Shows, Movies, Podcasts, Articles... really anything that I can find value from I will keep track of in this blog. I think I might try to take notes or jot down specfic topics. I have yet to...</p>
+						<div class ="card-footer px-0" style="background: transparent; border-top:0px; border-left: 0px;"> 
+						<button type="button" class=" flex btn btn-outline-secondary btn-sm my-1">💻 tech</button>
+<button type="button" class=" flex btn btn-outline-secondary btn-sm my-1">🌐 website</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		
+          <!-- <div class="card shadow mb-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="./images/paris.avif" class="img-fluid" alt="paris">
+                 </div>
+                <div class="col-md-8 p-1">
+                    <a href="./templates/details.html" class="text-decoration-none"><h2 class="card-title mt-1 mb-0">My Trip To Paris</h2></a>
+                    <div class=" text-muted mb-1">June 16 2022</div>
+                    <p class="mb-2 card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, odio, error ex mollitia quos neque impedit provident ad nisi eaque aliquam quas quod voluptate! Expedita molestiae debitis cumque libero blanditiis!</p>
+                    <button type="button" class=" flex btn btn-outline-secondary btn-sm my-1">🇫🇷 France</button>
+                    <button type="button" class=" flex btn btn-outline-secondary btn-sm my-1">🌎 Travel</button>
+                </div>
+            </div>
+        </div>
+         <div class="card shadow mb-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="./images/website-code.avif" class="img-fluid" alt="paris">
+                 </div>
+                <div class="col-md-8 p-1">
+                    <a href="./templates/details.html" class="text-decoration-none"><h2 class="card-title mt-1 mb-0">How To Build A Website</h2></a>
+                    <div class=" text-muted mb-1">June 16 2022</div>
+                    <p class="mb-2 card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, odio, error ex mollitia quos neque impedit provident ad nisi eaque aliquam quas quod voluptate! Expedita molestiae debitis cumque libero blanditiis!</p>
+                    <button type="button" class=" flex btn btn-outline-secondary btn-sm my-1">💻 Tech</button>
+                    <button type="button" class=" flex btn btn-outline-secondary btn-sm my-1">🌐 WebDev</button>
+                </div>
+            </div>
+        </div> -->
+          <!-- <div class="row-col-1">
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../images/poland.JPG" class="rounded-start" style="  width: 100%;
+              height: 32vh;
+                object-fit: cover;" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body d-flex flex-column position-static ">
+                  <a href="./templates/details.html" class="text-decoration-none"><h2 class="card-title mt-1 mb-0">My Trip To Paris</h2></a>
+                      <div class=" text-muted mb-1">June 16 2022</div>
+                      <p class="mb-2 card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, odio, error ex mollitia quos neque impedit provident ad nisi eaque aliquam quas quod voluptate! Expedita molestiae debitis cumque libero blanditiis!</p>
+                </div>
+                <div class="card-footer text-muted mb-auto" style="background: transparent; border-top:0px;">
+                  <button type="button" class=" flex btn btn-outline-secondary btn-sm my-1">🇫🇷 France</button>
+                  <button type="button" class=" flex btn btn-outline-secondary btn-sm my-1">🌎 Travel</button>
+               </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../images/blog_image.avif" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body d-flex flex-column position-static">
+                  <a href="./templates/details.html" class="text-decoration-none"><h2 class="card-title mt-1 mb-0">My Trip To Paris</h2></a>
+                      <div class=" text-muted mb-1">June 16 2022</div>
+                      <p class="mb-auto card-text">sis cumque libero blanditiistate! Expedita molestiae debitis cumque libero blanditiis</p>
+                </div>
+                <div class="card-footer text-muted mb-auto" style="background: transparent; border-top:0px;">
+                  <button type="button" class=" flex btn btn-outline-secondary btn-sm my-1">🇫🇷 France</button>
+                  <button type="button" class=" flex btn btn-outline-secondary btn-sm my-1">🌎 Travel</button>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        </div>
+      </main>
+    </div>
+    <footer class="footer mt-auto py-3 bg-none">
+      <div class="container text-center">
+        <span class="text-dark">Riya Cherlakola 2022</span>
+      </div>
+    </footer>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

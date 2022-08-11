@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon-16x16.png"
+    />
+    <title>About</title>
+  </head>
+  <body>
+    <div class="content">
+      <header>
+        <a href="index.html" class="logo">Riya Cherlakola</a>
+        <nav>
+          <ul class="nav_links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="inquiry-2.html">Demo Project</a></li>
+            <li><button class="btn-toggle">🌙</button></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="wrapper">
+        <section class="left">
+          <img
+            src="images/IMG_8667-min.jpg"
+            class="about-me-image"
+            alt="Riya Profile Picture"
+          />
+        </section>
+        <section class="right">
+          <h2>Who Am I?</h2>
+          <p class="aboutme-text">
+            I am a student at UIUC 🧡💙. <br />
+            I study CS and Linguistics. <br />
+            In my free time I love to watch movies 🍿, read books&nbsp;📚, and
+            play tennis 🎾. Catch me coding in the library with a cup of tea 🫖.
+            This is my new website!
+          </p>
+        </section>
+      </div>
+    </div>
+    <footer class="footer">
+      copyright &copy; RiyaCherlakola 2022. Created with ❤️ + 😭
+    </footer>
+  </body>
+  <script>
+    const btn = document.querySelector(".btn-toggle");
+
+    const currentTheme = localStorage.getItem("theme");
+    if (currentTheme == "dark") {
+      document.body.classList.add("dark-theme");
+    }
+
+    btn.addEventListener("click", function () {
+      document.body.classList.toggle("dark-theme");
+
+      let theme = "light";
+      if (document.body.classList.contains("dark-theme")) {
+        theme = "dark";
+      }
+      localStorage.setItem("theme", theme);
+    });
+  </script>
+</html>
