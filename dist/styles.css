@@ -45,6 +45,7 @@
   }
   .nav_links {
     list-style: none;
+    text-decoration: none;
   }
   .nav_links li {
     display: inline-block;
