@@ -2,6 +2,8 @@ import sys
 import os
 import datetime
 import glob
+import shutil
+from PIL import Image
 
 
 # Function I wrote to convert ./data/2022-06-22.md into Jun 22, 2022
@@ -157,6 +159,28 @@ def get_tags(lines):
             return tag_list
     return ""
 
+def copy_images():
+	src = './data/blog-images'
+	dst = './dist/articles/blog-images/'
+	img_list = glob.glob(src + '/*.*')
+	for img_path in img_list:
+		print('img_path is ...' + img_path)
+		dst_path = dst + os.path.basename(img_path)
+		if (not os.path.exists(dst_path)):
+			if (img_path.lower().find('.jpg') > 0):
+				print('compressing .... ' + img_path + ' to ' + dst)
+				img_obj = Image.open(img_path)
+				if (img_obj.size[0] > 1024):
+					print('even resizing 1024 max width...')
+					img_obj = img_obj.resize( (1024, int(img_obj.size[1] * 1024 / img_obj.size[0])) )
+				img_obj.save(dst_path, "JPEG", optimize=True, quality=80)
+			else:
+				print('Copying .... ' + img_path + ' to ' + dst)
+				shutil.copy(img_path, dst)
+		else:
+			print(dst_path + ' exists... skipping.')
+
+
 # Main build function. Take source file, merge them with templates,
 # and then export them into dist folder
 def generate():
@@ -250,6 +274,9 @@ def generate():
 	fw = open("./dist/blog.html", "w")
 	fw.write(output_blog)
 	fw.close()
+
+	# Copy Images
+	copy_images()
 
 #Tests!!!
 if len(sys.argv) == 1:
