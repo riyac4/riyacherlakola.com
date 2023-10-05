@@ -112,13 +112,13 @@
 .home-text {
     font-size: 30px;
     font-family: Avenir;
-    width: 400px;
+    /* width: 400px; */
 }
 .home-right {
-    display: block;
+    /* display: block; */
     margin: 0 auto;
     margin-top: 50px;
-    width: 400px;
+    /* width: 400px; */
     text-align: center;
 
 }
